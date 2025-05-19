@@ -39,7 +39,7 @@ In advanced stages, the focus shifts to improving query performance. Some optimi
 ## 15 Questions
 
 1. Retrieve the names of all tracks that have more than 1 billion streams.
-'''
+'''SQL
 SELECT 
 	track, stream 
 FROM spotify
