@@ -17,19 +17,13 @@ Before diving into SQL, it’s important to understand the dataset thoroughly. T
 - `Album_type`: The type of album (e.g., single or album).
 - Various metrics such as `danceability`, `energy`, `loudness`, `tempo`, and more.
 
-### 4. Querying the Data
-After the data is inserted, various SQL queries can be written to explore and analyze the data. Queries are categorized into **easy**, **medium**, and **advanced** levels to help progressively develop SQL proficiency.
+### 2. Querying the Data
+After the data is inserted, various SQL queries can be written to explore and analyze the data. Which includes-
+1. **Simple data retrieval, filtering, and basic aggregations.**
+2. **More complex queries involving grouping, aggregation functions, and joins.**
+3. **Nested subqueries, window functions, CTEs, and performance optimization.**
 
-#### Easy Queries
-- Simple data retrieval, filtering, and basic aggregations.
-  
-#### Medium Queries
-- More complex queries involving grouping, aggregation functions, and joins.
-  
-#### Advanced Queries
-- Nested subqueries, window functions, CTEs, and performance optimization.
-
-### 5. Query Optimization
+### 3. Query Optimization
 In advanced stages, the focus shifts to improving query performance. Some optimization strategies include:
 - **Indexing**: Adding indexes on frequently queried columns.
 - **Query Execution Plan**: Using `EXPLAIN ANALYZE` to review and refine query performance.
@@ -39,12 +33,12 @@ In advanced stages, the focus shifts to improving query performance. Some optimi
 ## 15 Questions
 
 1. Retrieve the names of all tracks that have more than 1 billion streams.
-'''SQL
+```
 SELECT 
 	track, stream 
 FROM spotify
 WHERE stream> 1000000000;
-'''
+```
 3. List all albums along with their respective artists.
 4. Get the total number of comments for tracks where `licensed = TRUE`.
 5. Find all tracks that belong to the album type `single`.
